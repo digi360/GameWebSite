@@ -22,14 +22,14 @@
     if (!window.cancelAnimationFrame)
         window.cancelAnimationFrame = function(id) {
             clearTimeout(id);
-        };
+		};
 }());
 
 (function () {
 			
 	var coin,
 		coinImage,
-		canvas;					
+		canvas;			
 
 	function gameLoop () {
 	
@@ -112,5 +112,23 @@
 	// Load sprite sheet
 	coinImage.addEventListener("load", gameLoop);
 	coinImage.src = "img/coin-sprite-animation.png";
+
+
+		
+	//window.addEventListener('resize', resizeCanvas, false);
+
+	/* function resizeCanvas() {
+		//canvas.width = window.innerWidth;
+		//canvas.height = window.innerHeight;
+		var main = document.getElementById("mainSection");
+		var mainWidth = document.getElementById("mainSection").Width;
+		var mainHeight = document.getElementById("mainSection").style.height;
+		console.log("main = " + main);
+		console.log("mainWidth = " + mainWidth + " | mainHeight = " + mainHeight);
+
+		canvas.width = mainWidth;
+		canvas.height = mainHeight;
+		//console.log("Canvas width: " + canvas.width + " | Canvas height: " + canvas.height);
+	} */
 
 } ());
