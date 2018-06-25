@@ -1,7 +1,6 @@
-"# GameWebSite" 
+GameWebSite
 
 Prerequisites
-
 - An HTML5-compatible browser
 
 Built With
